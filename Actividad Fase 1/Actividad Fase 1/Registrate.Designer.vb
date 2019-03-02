@@ -197,6 +197,7 @@ Partial Class Registrate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(375, 455)
+        Me.ControlBox = False
         Me.Controls.Add(Me.atras)
         Me.Controls.Add(Me.registrar)
         Me.Controls.Add(Me.Rpass)
@@ -215,6 +216,7 @@ Partial Class Registrate
         Me.Controls.Add(Me.nombre)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Registrate"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrate"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

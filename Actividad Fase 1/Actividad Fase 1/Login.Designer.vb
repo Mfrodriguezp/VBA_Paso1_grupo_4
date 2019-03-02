@@ -29,6 +29,7 @@ Partial Class Login
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Salir = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -97,11 +98,22 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'Salir
+        '
+        Me.Salir.Location = New System.Drawing.Point(301, 12)
+        Me.Salir.Name = "Salir"
+        Me.Salir.Size = New System.Drawing.Size(75, 23)
+        Me.Salir.TabIndex = 7
+        Me.Salir.Text = "Salir"
+        Me.Salir.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(388, 393)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LinkLabel1)
@@ -110,6 +122,7 @@ Partial Class Login
         Me.Controls.Add(Me.Pass)
         Me.Controls.Add(Me.User)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -124,4 +137,5 @@ Partial Class Login
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Salir As Button
 End Class
